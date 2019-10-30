@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
 <head>
-<title>AdminLTE 3 | Starter</title>
+<title>Tambah Blog</title>
         @include('template.head')
 </head>
 <body class="hold-transition sidebar-mini">
@@ -31,8 +31,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-             
+              <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+              <li class="breadcrumb-item active">tambah blog</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -42,20 +42,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Main content -->
     <div class="content">
-        <h3>Halaman Utama</h3>
+    <h3>Halaman Tambah Blog</h3>
+        {{--isi--}}
         <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
     <!-- Main Footer -->
      @include('template.Footer')
-
+<div>
 <!-- ./wrapper-->
 
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-
-       @include('template.Script')
 </body>
 </html>
