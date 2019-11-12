@@ -32,7 +32,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
-              <li class="breadcrumb-item active">tambah blog</li>
+              <li class="breadcrumb-item active">data blog</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -43,7 +43,44 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
     <h3>Halaman Data Blog</h3>
-        {{--isi--}}
+       <!--card body-->
+       <div class="card-body"> 
+        <table class="table table-bordered">
+          <tbody> 
+           <tr>
+              <th> Nama </th>
+              <th> Aksi </th>
+              
+           </tr> 
+           
+           @foreach ($varAngka as $isinya) 
+           <tr> 
+              
+                <td>{{$isinya}}</td>
+                  <td>
+                     <a href="{{$isinya}}">
+                    <i class="fas fa-eye">Lihat</i>
+                     </a>
+                 
+
+                  
+                     <a href="{{$isinya}}">
+                     <center><i class="fas fa-edit">Edit</i></center>
+                     </a>
+                  
+
+                  
+                     <a href="{{$isinya}}">
+                     <p align="right"><i class="fas fa-trash-alt">Hapus</i></p align="right">
+                     </a>
+                  </td>
+                
+           </tr>       
+           @endforeach
+         </tbody>  
+        </table>   
+        </div>
+    </div> 
         <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -56,5 +93,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
+      @include('template.Script')
+
 </body>
 </html>

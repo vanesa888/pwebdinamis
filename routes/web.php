@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/tambah-blog', function () {
-    return view('Blog.tambahBlog');
-});
+Route::get('/tambah-blog', 'BlogController@tambahBlog');
 
-Route::get('/data-blog', function () {
-    return view('Blog.dataBlog');
-});
+Route::get('/data-blog', 'BlogController@index');

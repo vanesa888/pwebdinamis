@@ -43,6 +43,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
         <h3>Halaman Utama</h3>
+        </div>      
         <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
