@@ -49,7 +49,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <tbody> 
            <tr>
               <th> Nama </th>
-              <th> Aksi </th>
+              <th style="width: 25%">
+              <center> Aksi </center> </th>
               
            </tr> 
            
@@ -59,19 +60,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <td>{{$isinya}}</td>
                   <td>
                      <a href="{{$isinya}}">
-                    <i class="fas fa-eye">Lihat</i>
+                    <i class="fas fa-eye red">Lihat</i>
                      </a>
+
+                     |
                  
-
-                  
                      <a href="{{$isinya}}">
-                     <center><i class="fas fa-edit">Edit</i></center>
+                     <i class="fas fa-edit blue">Edit</i>
                      </a>
                   
+                     |
 
-                  
                      <a href="{{$isinya}}">
-                     <p align="right"><i class="fas fa-trash-alt">Hapus</i></p align="right">
+                     <i class="fas fa-trash-alt green">Hapus</i>
                      </a>
                   </td>
                 

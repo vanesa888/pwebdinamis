@@ -46,10 +46,10 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tambah-blog" class="nav-link">
+                <router-link to="/tambah-data" class="nav-link">
                   <i class="fas fa-archive nav-icon"></i>
                   <p>tambah blog</p>
-                </a>
+                  </router-link>
               </li>
               <li class="nav-item">
                 <a href="/data-blog" class="nav-link">

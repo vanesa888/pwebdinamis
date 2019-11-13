@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         @include('template.head')
 </head>
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
+<div class="wrapper" id="app">
 <!-- Navbar -->
       @include('template.Navbar')
 <!-- /.navbar-->
@@ -43,6 +43,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
         <h3>Halaman Utama</h3>
+        <router-view></router-view>
         </div>      
         <!-- /.content -->
   </div>
