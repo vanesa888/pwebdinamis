@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Route::get('/tambah-blog', 'BlogController@tambahBlog');
 
-Route::get('/data-blog', 'BlogController@index');
+Route::get('/data-blog', 'BlogController@dataBlog');
+
+Route::get('/data-blog', 'BlogController@kategori');
+
+Route::get('/data-blog', 'BlogController@pengguna');

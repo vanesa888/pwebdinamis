@@ -52,11 +52,24 @@
                   </router-link>
               </li>
               <li class="nav-item">
-                <a href="/data-blog" class="nav-link">
+                  <router-link to="/data-blog" class="nav-link">
                   <i class="fas fa-address-book nav-icon"></i>
-                  <p>Data blog</p>
-                </a>
+                  <p>data blog</p>
+                  </router-link>
               </li>
+              <li class="nav-item">
+                  <router-link to="/kategori" class="nav-link">
+                  <i class="fas fa-address-book nav-icon"></i>
+                  <p>kategori</p>
+                  </router-link>
+              </li>  
+              <li class="nav-item">
+                  <router-link to="/pengguna" class="nav-link">
+                  <i class="fas fa-address-book nav-icon"></i>
+                  <p>pengguna</p>
+                  </router-link>
+              </li>    
+
 
               </ul>
           </li>

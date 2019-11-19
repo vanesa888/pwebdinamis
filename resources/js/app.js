@@ -13,6 +13,7 @@ Vue.use(VueRouter)
 
 let routes = [
     {path: '/tambah-data', component: require('./components/Blog/TambahBlog.vue').default },
+    {path: '/data-blog', component: require('./components/Blog/dataBlog.vue').default },
 ]
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);

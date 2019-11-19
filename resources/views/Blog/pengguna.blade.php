@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
 <head>
-<title>Tambah Blog</title>
+<title>Data Blog</title>
         @include('template.head')
 </head>
 <body class="hold-transition sidebar-mini">
@@ -32,7 +32,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
-              <li class="breadcrumb-item active">tambah blog</li>
+              <li class="breadcrumb-item active">data blog</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -42,9 +42,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Main content -->
     <div class="content">
-    <h3>Halaman Tambah Blog</h3>
-        {{--isi--}}
+    <h3>Halaman Data Blog</h3>
+       <!--card body-->
+       <div class="card-body"> 
+        <table class="table table-bordered">
+          <tbody> 
+           <tr>
+              <th> Nama </th>
+              <th style="width: 25%">
+              <center> Aksi </center> </th>
+              
+           </tr> 
+           
+           @foreach ($varAngka as $isinya) 
+           <tr> 
+              
+                <td>{{$isinya}}</td>
+                  <td>
+                     <a href="{{$isinya}}">
+                    <i class="fas fa-eye red">Lihat</i>
+                     </a>
+
+                     |
+                 
+                     <a href="{{$isinya}}">
+                     <i class="fas fa-edit blue">Edit</i>
+                     </a>
+                  
+                     |
+
+                     <a href="{{$isinya}}">
+                     <i class="fas fa-trash-alt green">Hapus</i>
+                     </a>
+                  </td>
+                
+           </tr>       
+           @endforeach
+         </tbody>  
+        </table>   
         </div>
+    </div> 
         <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -57,5 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
+      @include('template.Script')
+
 </body>
 </html>
